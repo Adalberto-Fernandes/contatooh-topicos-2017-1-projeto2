@@ -9,7 +9,7 @@ INSTRUÇÕES DE FINALIZAÇÃO DO PROJETO 1
 Observações
 ___________
 
-* Em caso de trabalho feito em duplas, ambos os integrantes devem ter _commits_ em seus repositórios.
+* Em caso de trabalho feito em duplas, ambos os integrantes devem ter _commits_ no repositório do grupo.
 * A entrega do trabalho deverá ser feita por meio de _pull request_ no GitHub.
 
 **PRAZO DE ENTREGA: até 16/04 (domingo), às 23h55**
