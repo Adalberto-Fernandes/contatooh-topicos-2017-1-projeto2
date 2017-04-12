@@ -1,22 +1,5 @@
-var contatos = [
-   {
-      _id: 1,
-      nome: 'Contato Exemplo 1',
-      email: 'cont1@empresa.com.br',
-      telefone: '16-5555-1111'
-   },
-   {
-      _id: 2,
-      nome: 'Contato Exemplo 2',
-      email: 'cont2@empresa.com.br',
-      telefone: '16-5555-2222'
-   },
-   {
-      _id: 3,
-      nome: 'Contato Exemplo 3',
-      email: 'cont3@empresa.com.br',
-      telefone: '16-5555-3333'
-   }
+var ajuda = [
+  
 ];
 
 module.exports = function() {
