@@ -22,6 +22,15 @@
       </div>
    </div>
 
+   <div class="form-group">
+      <label for="email">Telefone</label>
+      <div class="input-group">
+            <input type="number" class="form-control" id="fone" name="fone"
+               placeholder="16.3727-4325" required 
+               ng-model="contato.fone" onkeypress="mascara(this, '##.#####-###')" maxlength="12"/>
+      </div>
+   </div>
+
    <div>
       <button type="submit" class="btn btn-primary">
          Salvar
