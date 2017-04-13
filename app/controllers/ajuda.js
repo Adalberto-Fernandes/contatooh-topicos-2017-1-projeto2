@@ -1,3 +1,29 @@
-var my_array = ['Teste 123', 'Lorem Ipsum'];
+var ajuda = [
+   {       
+      texto: "Este espaço foi criado para ajudá-lo"
+   },
+   {
+      texto: "Aqui você pode tirar todas as suas duvidas"
+   },
+   {
+      texto: "Procure por duvidas frequentes para agilizar seu problema"
+   },
+   {
+      texto: "Se preferir, abra um chat com um atendente especializado"
+   },
+   {
+      texto: "Deixe aqui seu comentário sobre o sistema"
+   }
+];
 
-{{ my_array[0] }} //acessando o primeiro elemento
+module.exports = function() {
+   var controller = {};
+   
+   controller.listaAjuda = function(req, res) {
+      res.json(ajuda);
+   };
+
+   
+
+   return controller;
+};
