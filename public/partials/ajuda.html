@@ -2,6 +2,10 @@
    <h1 class="text-center">Menu de ajuda</h1>
 </div>
 
+<p ng-show="mensagem" class="text-{{mensagem.class}}">
+   {{mensagem.texto}}
+</p>
+
 <div ng-repeat="a in ajuda">
 	<p>{{a.descricao}}</p>
 </div>
