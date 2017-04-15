@@ -1,32 +1,29 @@
 <h1 class="text-center">Contato</h1>
 
-<p ng-show="mensagem" class="text-{{mensagem.class}}">
-   {{mensagem.texto}}
-</p>
+<p ng-show="mensagem" class="tet-{{mensagem.class}}">{{mensagem.texto}}</p>
 
-<form ng-submit="salva()">
-   <div class="form-group">
-      <label for="nome">Nome completo</label>
-      <input type="text" class="form-control" id="nome" name="nome"
-         required ng-model="contato.nome" />
-   </div>
+<form ng-submit="salvar()">
+	<div class="form-group">
+		<label for="nome">Nome completo</label>
+		<input type="text" class="form-control" id="nome" name="nome" required ng-model="contato.nome">
+	</div>
 
-   <div class="form-group">
-      <label for="email">E-mail</label>
-      <!-- Comentário -->
-      <div class="input-group">
-            <span class="input-group-addon">@</span>
-            <input type="email" class="form-control" id="email" name="email"
-               placeholder="email@exemplo.com" required 
-               ng-model="contato.email" />
-      </div>
-   </div>
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon">@</span>
+			<input type="email" class="form-control" id="email" name="email" required ng-model="contato.email" placeholder="email@exemplo.com" required ng-model="contato.email">
+		</div>
+	</div>
 
-   <div>
-      <button type="submit" class="btn btn-primary">
-         Salvar
-      </button>
-      <a href="#/" class="btn btn-default">Voltar</a>
-   </div>
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><i class="fa fa-phone"></i></span>
+			<input type="number" class="form-control" id="tel" name="tel" required ng-model="contato.tel" placeholder="(99) 99999-9999" required ng-model="contato.tel">
+		</div>
+	</div>
 
+	<div>
+		<button type="submit" class="btn btn-primary">Salvar</button>
+		<a href="#/" class="btn btn-default">Voltar</a>
+	</div>
 </form>

@@ -1,9 +1,8 @@
 var http = require('http');
-var app = require('./config/express')(); // Cuidado com
-                                         // os parênteses
+var app = require('./config/express')();
 
 http
-   .createServer(app)
-   .listen(app.get('port'), function() {
-      console.log('Express escutando na porta ' + app.get('port'));
-   });
+	.createServer(app)
+	.listen(app.get('port'), function(){
+		console.log('Express escutando na porta '+app.get('port'));
+	});
