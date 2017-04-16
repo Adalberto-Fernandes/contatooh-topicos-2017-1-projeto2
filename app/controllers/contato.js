@@ -1,4 +1,4 @@
-﻿var contatos = [
+var contatos = [
    {
       _id: 1,
       nome: 'Contato Exemplo 1',
@@ -20,11 +20,34 @@
    }
 ];
 
+var topicos = [
+    {
+      _id: 1,
+      descricao: 'Problemas com a navegação',
+    },
+    {
+      _id: 2,
+      descricao: 'Problemas com alguma funcionalidade',
+    },
+    {
+      _id: 3,
+      descricao: 'Lista de possíveis erros',
+    },
+    {
+      _id: 4,
+      descricao: 'Outras categorias',
+    }
+];
+
 module.exports = function() {
    var controller = {};
    
    controller.listaContatos = function(req, res) {
       res.json(contatos);
+   };
+
+   controller.listaTopicos = function(req, res) {
+        res.json(topicos);
    };
 
    controller.obtemContato = function(req, res) {
