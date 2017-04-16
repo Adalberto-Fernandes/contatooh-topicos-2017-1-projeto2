@@ -1,18 +1,22 @@
-var contatos = [
+﻿var contatos = [
    {
       _id: 1,
       nome: 'Contato Exemplo 1',
-      email: 'cont1@empresa.com.br'
+      email: 'cont1@empresa.com.br',
+      telefone: '(16) 99999-9999'
    },
    {
       _id: 2,
       nome: 'Contato Exemplo 2',
-      email: 'cont2@empresa.com.br'
+      email: 'cont2@empresa.com.br',
+      telefone: '(16) 98888-8888'
+      
    },
    {
       _id: 3,
       nome: 'Contato Exemplo 3',
-      email: 'cont3@empresa.com.br'
+      email: 'cont3@empresa.com.br',
+      telefone: '(16) 96666-6666'
    }
 ];
 
