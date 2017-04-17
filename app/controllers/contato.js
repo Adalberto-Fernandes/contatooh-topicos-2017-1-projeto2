@@ -18,7 +18,7 @@ var contatos = [
 
 module.exports = function() {
    var controller = {};
-   
+
    controller.listaContatos = function(req, res) {
       res.json(contatos);
    };
@@ -27,7 +27,7 @@ module.exports = function() {
       //console.log(req.params.id);
 
       var idContato = req.params.id;
-      
+
       var filtrados = contatos.filter(function(contato) {
          return contato._id == idContato;
       });
@@ -47,8 +47,8 @@ module.exports = function() {
    }
 
    controller.removeContato = function(req, res) {
-      // O vetor contatos é filtrado e sobrescrito, 
-      // de modo a deixar de fora o contato cujo 
+      // O vetor contatos é filtrado e sobrescrito,
+      // de modo a deixar de fora o contato cujo
       // id foi excluído
       contatos = contatos.filter(function (contato) {
          return contato._id != req.params.id;
@@ -60,7 +60,7 @@ module.exports = function() {
    var ID_CONTATO_INC = 3; // Já existem três contatos
 
    controller.salvaContato = function(req, res) {
-      
+
       var contato = req.body;
 
       contato = contato._id ? atualiza(contato) : adiciona(contato);
@@ -83,9 +83,9 @@ module.exports = function() {
          }
          return contato;
       });
-      
+
       return existente;
-      
+
    }
 
    return controller;
