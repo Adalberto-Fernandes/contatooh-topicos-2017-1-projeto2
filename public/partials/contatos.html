@@ -1,4 +1,4 @@
- <div class="jumbotron">
+<div class="jumbotron">
     <h1 class="text-center">Bem-vindo ao Contatooh</h1>
  </div>
  
@@ -9,14 +9,13 @@
  <a href="#!/contato" class="btn btn-primary">
      Novo contato
   </a>
-  
- <a href="#!/ajuda" class="btn btn-info pull-right">
-    Ajuda
- </a>
- 
  
   <input ng-model="filtro" type="search" 
      placeholder="parte do nome" />
+     
+  <a href="#!/ajuda" class="btn btn-warning pull-center">
+    Ajuda
+ </a>
   
  <p class="text-info" ng-hide="contatos.length">
     Não há contatos cadastrados
@@ -38,7 +37,7 @@
            <td>{{c.email}}</td>
           <td>{{c.telefone}}</td>
           <td style="text-align: center">
-              <button ng-click="remove(c)" class="btn btn-warning">
+              <button ng-click="remove(c)" class="btn btn-danger">
                  Remover
               </button>
           </td>
