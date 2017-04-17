@@ -1,0 +1,22 @@
+<h1 class="text-center">
+    Ajuda
+</h1>
+
+<p ng-show="mensagem" class="text-{{mensagem.class}}">
+    {{mensagem.texto}}
+</p>
+
+<hr>
+<div ng-repeat="a in ajuda">
+    <p>{{a.descricao}}</p>
+</div>
+
+<hr>
+<h1 class="text-center">
+    <div class="col-md-12 text-center">
+        <a href="#!/contatos" class="btn btn-primary">
+            Voltar
+        </a>
+    </div>
+</h1>
+<hr>
