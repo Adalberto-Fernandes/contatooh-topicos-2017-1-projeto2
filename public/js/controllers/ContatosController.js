@@ -64,6 +64,7 @@ angular.module('contatooh')
                    '_id': 1,
                    'nome': 'Contato Angular 1',
                    'email': 'cont1@empresa.com.br'
+                   'Telefone': 1234s
                 },
                 {
                    '_id': 2,
