@@ -15,7 +15,8 @@ module.exports = function () {
    app.use(require('method-override')());
 
    //home(app);
-   load('controllers', {cwd: 'app'})
+   load('models', {cwd: 'app'})
+      .then('controllers')
       .then('routes')
       .into(app);
    return app;
