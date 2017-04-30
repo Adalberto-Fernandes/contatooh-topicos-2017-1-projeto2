@@ -1,61 +1,24 @@
 <!DOCTYPE html>
 <html ng-app="contatooh">
-
-<head>
+   <head>
       <meta name="viewport" content="width=device-width" />
       <meta charset="utf-8" />
-      <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
-      <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.css" />
-</head>
+      <link rel="stylesheet" 
+         href="vendor/bootstrap/dist/css/bootstrap.css" />
+      <link rel="stylesheet"
+         href="vendor/bootstrap/dist/css/bootstrap-theme.css" />
+   </head>
+   <body class="container">
 
-<body>
-      <div class="container">
-            <div ng-view></div>
-      </div>
+      <div ng-view></div>
 
-</body>
-
-<footer class="footer">
-      <div class="text-center center-block">
-            <span class="pull-left">Aluno: Guilherme Naldi Stefanelli</span>
-            <span class="pull-right"> Email: <a href="mailto:guinaldi@hotmail.com">guinaldi@hotmail.com</a></span>
-
-      </div>
-
-</footer>
-
+      <script src="vendor/angular/angular.js"></script>
+      <script src="vendor/angular-route/angular-route.js"></script>
+      <script src="vendor/angular-resource/angular-resource.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/services/ContatoService.js"></script>
+      <script src="js/controllers/ContatosController.js"></script>
+      <script src="js/controllers/ContatoController.js"></script>
+   
+   </body>
 </html>
-
-<script src="vendor/angular/angular.js"></script>
-<script src="vendor/angular-route/angular-route.js"></script>
-<script src="vendor/angular-resource/angular-resource.js"></script>
-<script src="js/main.js"></script>
-<script src="js/services/ContatoService.js"></script>
-<script src="js/services/AjudaService.js"></script>
-<script src="js/controllers/ContatosController.js"></script>
-<script src="js/controllers/ContatoController.js"></script>
-<script src="js/controllers/AjudaController.js"></script>
-
-<style>
-      .footer {
-            background-color: darkslategrey;
-            color: white;
-            position: relative;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            padding: 2rem;
-      }
-      
-      .container {
-            min-height: 100%;
-      }
-      
-      html,
-      body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-      }
-</style>
