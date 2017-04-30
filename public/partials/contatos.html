@@ -13,6 +13,10 @@
 <input ng-model="filtro" type="search" 
    placeholder="parte do nome" />
 
+<a href="#!/ajuda" class="btn btn-primary ">
+   Ajuda
+</a>
+
 <p class="text-info" ng-hide="contatos.length">
    Não há contatos cadastrados
 </p>
@@ -25,11 +29,12 @@
       <tr>
          <th>NOME</th>
          <th>E-MAIL</th>
+         <th>TELEFONE</th>
          <th class="text-center">Ação</th>
       </tr>
       <tr ng-repeat="c in contatos | filter: filtro">
          <td><a href="#!/contato/{{c._id}}">{{c.nome}}</a></td>
-         <td>{{c.email}}</td>
+         <td>{{c.email}}</td><td>{{c.telefone}}</td>
          <td>
             <button ng-click="remove(c)" class="btn btn-warning">
                Remover
