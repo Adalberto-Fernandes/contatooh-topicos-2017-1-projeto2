@@ -1,12 +1,12 @@
 {
-  "name": "cotatotohh",
+  "name": "contatooh",
   "version": "1.0.0",
   "description": "Agenda de contatos",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Tarsis Cruz <costacruzt@gmail.com>",
+  "author": "Fausto G. Cintra <fausto@fgcintra.pro.br>",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.16.1",

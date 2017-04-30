@@ -1,13 +1,20 @@
 {
-  "name": "cotatotohh",
+  "name": "contatooh",
   "description": "Agenda de contatos",
   "main": "server.js",
   "authors": [
-    "Tarsis Cruz <costacruzt@gmail.com>"
+    "Fausto G. Cintra <fausto@fgcintra.pro.br>"
   ],
   "license": "ISC",
-  "moduleType": [],
   "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
     "angular": "^1.6.2",
     "angular-route": "^1.6.3",
