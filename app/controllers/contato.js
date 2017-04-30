@@ -1,92 +1,76 @@
 var contatos = [
-   {
-      _id: 1,
-      nome: 'Contato Exemplo 1',
-      email: 'cont1@empresa.com.br'
-   },
-   {
-      _id: 2,
-      nome: 'Contato Exemplo 2',
-      email: 'cont2@empresa.com.br'
-   },
-   {
-      _id: 3,
-      nome: 'Contato Exemplo 3',
-      email: 'cont3@empresa.com.br'
-   }
+	{
+		_id: 1,
+		nome: 'Contato 1',
+		email: 'contato1@asdf.com',
+		tel: '(11) 11111-11111'
+	},
+	{
+		_id: 2,
+		nome: 'Contato 2',
+		email: 'contato2@asdf.com'	,
+		tel: '(22) 22222-2222'
+	},
+	{
+		_id: 3,
+		nome: 'Contato 3',
+		email: 'contato3@asdf.com',
+		tel: '(33) 33333-3333'
+	}
 ];
 
-module.exports = function() {
-   var controller = {};
-   
-   controller.listaContatos = function(req, res) {
-      res.json(contatos);
-   };
+module.exports = function(){
+	var controller = {};
 
-   controller.obtemContato = function(req, res) {
-      //console.log(req.params.id);
+	controller.listaContatos = function(req, res){
+		res.json(contatos);
+	}
 
-      var idContato = req.params.id;
-      
-      var filtrados = contatos.filter(function(contato) {
-         return contato._id == idContato;
-      });
+	controller.obtemContato = function(req, res){
+		var idContato = req.params.id
+		var filtrados = contatos.filter(function(contato){
+			return contato._id == idContato;
+		});
 
-      // O método filter sempre retorna um vetor,
-      // mesmo que haja um só resultado. Por isso,
-      // se houver encontrado alguém, pegamos a primeira
-      // posição (0) do vetor
-      if(filtrados.length > 0) { // Encontrou algo
-         var contato = filtrados[0];
-         res.json(contato);
-      }
-      else {
-         res.status(404).send('Contato ' + idContato +
-            ' não encontrado.');
-      }
-   }
+		if(filtrados.length > 0){
+			var contato = filtrados[0];
+			res.json(contato);
+		}else{
+			res.status(404).send('Contato '+ idContato+ ' não encontrado');
+		}
+	}
 
-   controller.removeContato = function(req, res) {
-      // O vetor contatos é filtrado e sobrescrito, 
-      // de modo a deixar de fora o contato cujo 
-      // id foi excluído
-      contatos = contatos.filter(function (contato) {
-         return contato._id != req.params.id;
-      });
-      // HTTP 204: OK, mas não há conteúdo na resposta
-      res.status(204).end();
-   }
+	controller.removeContato = function(req, res){
+		contatos = contatos.filter(function(contato){
+			return contato._id != req.params.id;
+		});
 
-   var ID_CONTATO_INC = 3; // Já existem três contatos
+		res.status(204).end();
+	}
 
-   controller.salvaContato = function(req, res) {
-      
-      var contato = req.body;
+	var ID_CONTATO_INC = 3; // Já existem 3 contatos
 
-      contato = contato._id ? atualiza(contato) : adiciona(contato);
+	controller.salvaContato = function(req, res){
+		var contato = req.body;
+		contato = contato._id ? atualizar(contato) : adiciona(contato);
+		res.json(contato);
+	}
 
-      res.json(contato);
+	function adicionar(novo){
+		novo._id = ++ID_CONTATO_INC;
+		contatos.push(novo);
+		return novo;
+	}
 
-   }
+	function atualizar(existente){
+		contatos = contatos.map(function(contato){
+			if(contato._id == existente._id){
+				contato = existente;
+			}
+			return contato;
+		});
+		return existente;
+	}
 
-   function adiciona(novo) {
-      novo._id = ++ID_CONTATO_INC;
-      contatos.push(novo);
-      return novo;
-   }
-
-   function atualiza(existente) {
-
-      contatos = contatos.map(function(contato){
-         if(contato._id == existente._id) {
-            contato = existente;
-         }
-         return contato;
-      });
-      
-      return existente;
-      
-   }
-
-   return controller;
+	return controller;
 };
