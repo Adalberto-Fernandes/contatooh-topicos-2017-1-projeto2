@@ -1,6 +1,8 @@
 angular.module('contatooh')
    .controller('ContatoController', 
       function($scope, $routeParams, $resource, Contato) {
+         
+         //var Contato = $resource('contatos/:id');
 
          $scope.mensagem = {};
 
