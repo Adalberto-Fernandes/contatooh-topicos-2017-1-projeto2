@@ -13,6 +13,4 @@ module.exports = function(app) {
    app.route('/contatos/:id')
       .get(controller.obtemContato)
       .delete(controller.removeContato);
-
-  
 };

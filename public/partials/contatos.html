@@ -2,13 +2,6 @@
    <h1 class="text-center">Bem-vindo ao Contatooh</h1>
 </div>
 
-<div class="text-right">
-   <a href="#!/ajuda" class="btn btn-primary">
-      AJUDA
-   </a>
-
-</div>
-
 <p ng-show="mensagem" class="text-{{mensagem.class}}">
    {{mensagem.texto}}
 </p>
@@ -32,14 +25,12 @@
       <tr>
          <th>NOME</th>
          <th>E-MAIL</th>
-         <th>TELEFONE</th>
          <th class="text-center">Ação</th>
       </tr>
       <tr ng-repeat="c in contatos | filter: filtro">
          <td><a href="#!/contato/{{c._id}}">{{c.nome}}</a></td>
          <td>{{c.email}}</td>
-         <td>{{c.telefone}}</td>
-         <td class="text-center">
+         <td>
             <button ng-click="remove(c)" class="btn btn-warning">
                Remover
             </button>
