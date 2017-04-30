@@ -1,32 +1,39 @@
 <h1 class="text-center">Contato</h1>
 
 <p ng-show="mensagem" class="text-{{mensagem.class}}">
-   {{mensagem.texto}}
+      {{mensagem.texto}}
 </p>
 
 <form ng-submit="salva()">
-   <div class="form-group">
-      <label for="nome">Nome completo</label>
-      <input type="text" class="form-control" id="nome" name="nome"
-         required ng-model="contato.nome" />
-   </div>
-
-   <div class="form-group">
-      <label for="email">E-mail</label>
-      <!-- Comentário -->
-      <div class="input-group">
-            <span class="input-group-addon">@</span>
-            <input type="email" class="form-control" id="email" name="email"
-               placeholder="email@exemplo.com" required 
-               ng-model="contato.email" />
+      <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" class="form-control" id="nome" name="nome" required ng-model="contato.nome" />
       </div>
-   </div>
 
-   <div>
-      <button type="submit" class="btn btn-primary">
+      <div class="form-group">
+            <label for="email">E-mail</label>
+            <!-- Comentário -->
+            <div class="input-group">
+                  <span class="input-group-addon">@</span>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com" required ng-model="contato.email"
+                  />
+            </div>
+      </div>
+
+      <div class="form-group">
+            <label for="email">Telefone</label>
+            <!-- Comentário -->
+            <div class="input-group">
+                  <input type="number" class="form-control" id="telefone" name="telefone" placeholder="1699999999" required ng-model="contato.telefone"
+                  />
+            </div>
+      </div>
+
+      <div>
+            <button type="submit" class="btn btn-primary">
          Salvar
       </button>
-      <a href="#/" class="btn btn-default">Voltar</a>
-   </div>
+            <a href="#/" class="btn btn-default">Voltar</a>
+      </div>
 
 </form>
