@@ -2,41 +2,18 @@ var contatos = [
    {
       _id: 1,
       nome: 'Contato Exemplo 1',
-      email: 'cont1@empresa.com.br',
-      telefone: '(16) 99999-9999'
+      email: 'cont1@empresa.com.br'
    },
    {
       _id: 2,
       nome: 'Contato Exemplo 2',
-      email: 'cont2@empresa.com.br',
-      telefone: '(16) 98888-8888'
-      
+      email: 'cont2@empresa.com.br'
    },
    {
       _id: 3,
       nome: 'Contato Exemplo 3',
-      email: 'cont3@empresa.com.br',
-      telefone: '(16) 96666-6666'
+      email: 'cont3@empresa.com.br'
    }
-];
-
-var topicos = [
-    {
-      _id: 1,
-      descricao: 'Problemas com a navegação',
-    },
-    {
-      _id: 2,
-      descricao: 'Problemas com alguma funcionalidade',
-    },
-    {
-      _id: 3,
-      descricao: 'Lista de possíveis erros',
-    },
-    {
-      _id: 4,
-      descricao: 'Outras categorias',
-    }
 ];
 
 module.exports = function() {
@@ -44,10 +21,6 @@ module.exports = function() {
    
    controller.listaContatos = function(req, res) {
       res.json(contatos);
-   };
-
-   controller.listaTopicos = function(req, res) {
-        res.json(topicos);
    };
 
    controller.obtemContato = function(req, res) {

@@ -16,12 +16,6 @@ angular.module('contatooh', ['ngRoute', 'ngResource'])
          controller: 'ContatoController'
       });
 
-
-      $routeProvider.when('/ajuda', {
-            templateUrl: 'partials/ajuda.html',
-            controller: 'AjudaController'
-      });
-
       $routeProvider.otherwise({redirectTo: '/contatos'});
    
 });
