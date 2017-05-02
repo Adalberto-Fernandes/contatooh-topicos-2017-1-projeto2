@@ -1,38 +1,24 @@
 <!DOCTYPE html>
 <html ng-app="contatooh">
-      <head>
-            <meta name="viewport" content="width=device-width" />
-            <meta charset="utf-8" />
-            <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
-            <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.css" />
-      </head>
-      <body>
-            <div class="container">
-                  <div ng-view></div>
-            </div>
-      </body>
-      <footer class="jumbotron" >
-       <div class="text-center center-block" style="margin-block-end: 10%; position: relative; width: 100%;">
-             <div class="row" style="margin-left: 15%; margin-right: 10%">
-                   <div class="col-sm-10">
-                        <span class="pull-left">Aluno: Danilo Matias - Email: danilo.maldito@gmail.com</span>
-                   </div>
-                   <div class="col-sm-10">
-                        <span class="pull-left">Aluna: Aline Lopes Matias - Email: alinelopes.lopes68@gmail.com</span>      
-                   </div>
-             </div>
-       </div>
- </footer>
- </html>
+   <head>
+      <meta name="viewport" content="width=device-width" />
+      <meta charset="utf-8" />
+      <link rel="stylesheet" 
+         href="vendor/bootstrap/dist/css/bootstrap.css" />
+      <link rel="stylesheet"
+         href="vendor/bootstrap/dist/css/bootstrap-theme.css" />
+   </head>
+   <body class="container">
 
- 
- <script src="vendor/angular/angular.js"></script>
- <script src="vendor/angular-route/angular-route.js"></script>
- <script src="vendor/angular-resource/angular-resource.js"></script>
- <script src="js/main.js"></script>
- <script src="js/services/ContatoService.js"></script>
- <script src="js/services/AjudaService.js"></script>
- <script src="js/controllers/ContatosController.js"></script>
- <script src="js/controllers/ContatoController.js"></script>
- <script src="js/controllers/AjudaController.js"></script>
- 
+      <div ng-view></div>
+
+      <script src="vendor/angular/angular.js"></script>
+      <script src="vendor/angular-route/angular-route.js"></script>
+      <script src="vendor/angular-resource/angular-resource.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/services/ContatoService.js"></script>
+      <script src="js/controllers/ContatosController.js"></script>
+      <script src="js/controllers/ContatoController.js"></script>
+   
+   </body>
+</html>
