@@ -1,7 +1,7 @@
 var http = require('http');
 var app = require('./config/express')(); // Cuidado com
                                          // os parênteses
-
+// isto é um comentario
 http
    .createServer(app)
    .listen(app.get('port'), function() {
