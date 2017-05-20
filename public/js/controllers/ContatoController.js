@@ -39,6 +39,12 @@ angular.module('contatooh')
                   console.log(erro);
                }
             );      
-         }; 
+         };
+
+			// Preenchimento de um vetor com todos os contatos
+			// anteriormente cadastrados
+			Contato.query(function(contatos) {
+				$scope.contatos = contatos;
+			}); 
 
       });
