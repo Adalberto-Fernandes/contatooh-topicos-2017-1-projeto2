@@ -10,14 +10,18 @@
    </head>
    <body class="container">
 
-      <div class="text-right">
-         <p>
-            Logado como: 
-            <span id="usuario-logado">
+      <% // Este bloco só será exibido se houver usuário logado %>
+      <% if (usuarioLogado.length > 0) { %>
+         <div class="text-right">
+            <p>
+               Logado como: 
+               <span id="usuario-logado">
                <%= usuarioLogado %>
-            </span>
-         </p>
-      </div>
+               </span>
+               <a href="/logout">Logout</a>
+            </p>
+         </div>
+      <% } %>
 
       <div ng-view></div>
 
