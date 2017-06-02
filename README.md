@@ -1,15 +1,16 @@
-INSTRUÇÕES DE FINALIZAÇÃO DO PROJETO 1
+INSTRUÇÕES DE FINALIZAÇÃO DO PROJETO 2
 ======================================
 
-1. Criar um campo `telefone` para cada contato. No formulário, esse campo deve aceitar apenas números.
-2. No AngularJS, criar uma rota `#!/ajuda` que carregue uma parcial chamada `ajuda.html`. Essa parcial deve exibir o texto recebido do servidor, um item por parágrafo. No arquivo `contatos.html`, criar um _link_, estilizado como um botão, que aponte para a rota do AngularJS.
-3. No Express, criar uma rota `/ajuda` que devolva um vetor com, pelo menos, cinco blocos de texto.
-4. Em `index.html`, criar um rodapé em que conste o nome e o e-mail do(s) integrante(s) do grupo.
+1. Selecione o _branch_ `projeto2` e dê um _fork_ para o seu próprio repositório.
+2. Clone o **seu** repositório para o seu computador.
+3. Implemente as tarefas de _hardening_ (reforço de segurança) da aplicação contidas no **Capítulo 9** do livro de MEAN Stack do Flávio Almeida. **ATENÇÃO**: o método `xframe()` não funciona mais nas versões mais recentes do `helmet`. Busque uma alternativa.
+4. **Cada tarefa implementada deverá estar acompanhada, no código-fonte, de um comentário explicando sua finalidade.**
+5. Terminada a implementação e efetuados os testes, faça o _push_ das alterações para o **seu** repositório. Na interface do GitHub, gere um _pull request_ para o repositório **do professor**. 
 
-Observações
+**Observações**
 ___________
 
-* Em caso de trabalho feito em duplas, ambos os integrantes devem ter _commits_ em seus repositórios.
-* A entrega do trabalho deverá ser feita por meio de _pull request_ no GitHub.
+* Em caso de trabalho feito em duplas, o repositório do professor deverá ser _forkado_ por **apenas um** dos integrantes. O outro integrante deverá ser adicionado ao repositório _forkado_ como colaborador. Ambos deverão clonar o repositório _forkado_ para suas respectivas máquinas, e o _pull request_ enviado ao professor deverá ter _commits_ dos dois integrantes.
+* A entrega do trabalho deverá ser feita **exclusivamente** por meio de _pull request_ no GitHub.
 
-**PRAZO DE ENTREGA: até 16/04 (domingo), às 23h55**
+**PRAZO DE ENTREGA: até 25/06 (domingo), às 23h55**. Trabalhos entregues após o prazo sofrerão desconto de 25% por dia de atraso.
