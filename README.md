@@ -1,8 +1,9 @@
 INSTRUÇÕES DE FINALIZAÇÃO DO PROJETO 2
 ======================================
 
-1. Selecione o _branch_ `projeto2` e dê um _fork_ para o seu próprio repositório.
-2. Clone o **seu** repositório para o seu computador.
+0. **APAGUE** o repositório `contatooh-topicos-2017-1` que porventura existir em sua conta do GitHub.
+1. Dê um _fork_ deste repositório para o seu próprio repositório.
+2. Clone o _branch_ `projeto2` do **seu** repositório para o seu computador.
 3. Implemente as tarefas de _hardening_ (reforço de segurança) da aplicação contidas no **Capítulo 9** do livro de MEAN Stack do Flávio Almeida. **ATENÇÃO**: o método `xframe()` não funciona mais nas versões mais recentes do `helmet`. Busque uma alternativa.
 4. **Cada tarefa implementada deverá estar acompanhada, no código-fonte, de um comentário explicando sua finalidade.**
 5. Terminada a implementação e efetuados os testes, faça o _push_ das alterações para o **seu** repositório. Na interface do GitHub, gere um _pull request_ para o repositório **do professor**. 
